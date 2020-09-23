@@ -38,7 +38,12 @@ ids = [99999999, -1000000000] #ids of the chats that are able to use the command
 
 ## Usage
 
-Just send the commands on a chat with permissions and you're done.
+Run the bot with the following command:
+```bash
+$ python bot.py
+```
+
+Then just send the commands on a chat with permissions and you're done.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
