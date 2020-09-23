@@ -1,0 +1,1 @@
+ids = [] #ids dos chats com permissoes para usar os comandos
