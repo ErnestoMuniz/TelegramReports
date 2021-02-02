@@ -27,7 +27,10 @@ def report(arg, message, comm):
         json.dump(variaveis, vrbs)
     os.system('cd modules/{}/ && python3 {}.py'.format(spl[0], spl[1]))
     variaveis = json.load(open('modules/{}/variables.json'.format(spl[0]), 'r'))
-    bot.reply_to(message, variaveis['report'])
+    if variaveis['report'] == "":
+        pass
+    else:
+        bot.reply_to(message, variaveis['report'])
 
 #update loop
 print('Bot running...')
