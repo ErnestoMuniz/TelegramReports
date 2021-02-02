@@ -1,49 +1,31 @@
-# Tom Ticket Reports
+# Telegram Reports
 
-A Telegram Bot made to send TomTicket reports on a chat.
+A modular Python3 program made to send Telegram Reports.
 
 ## Installation
 
 This repository uses [Telebot](https://github.com/eternnoir/pyTelegramBotAPI) to have a functional Telegram python bot.
 
 ```bash
-$ pip install pyTelegramBotAPI
+$ pip3 install pyTelegramBotAPI
 ```
-Then clone the repository and edit the following files in order to customize it at your own taste.
+Then clone the repository and edit the following files on the base folder in order to customize it at your own taste.
 
-init.py
-```python
-bot_api = "YOURKEYGOESHERE" #Telegram bot API key
-tt_key = "YOURTOKENGOESHERE" #TomTicket token API
-```
-
-deps.py - edit the data object with your departaments infos.
-```python
-data = {
-	'department':{
-		'dp_id':'YOURDPID',
-		'dp_name':'DPNAME'
-	},
-	'other_department':{
-		'dp_id':'OTHERDP',
-		'dp_name':'OTHERDP'
-	}
-}
+keys.json
+```json
+"bot_key" = "YOURKEYGOESHERE" #Telegram bot API key
 ```
 
-chats.py
-```python
-ids = [99999999, -1000000000] #ids of the chats that are able to use the commands
-```
+Then add your custom mods folders to the modules folder. Or try some of our official ones like [TomTicket_Reports](https://github.com/ErnestoMuniz/TomTicket_Reports) or [NPX_Reports](https://github.com/ErnestoMuniz/NPX_Reports)
 
 ## Usage
 
 Run the bot with the following command:
 ```bash
-$ python bot.py
+$ python3 main.py
 ```
 
-Then just send the commands on a chat with permissions and you're done.
+Then just send the commands on a chat with the bot and you're done.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
