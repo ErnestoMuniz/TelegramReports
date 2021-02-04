@@ -23,8 +23,11 @@ def report(arg, message, comm):
     spl = arg.split('/')
     variaveis = json.load(open('modules/{}/variables.json'.format(spl[0]), 'r'))
     with open('modules/{}/variables.json'.format(spl[0]), 'w') as vrbs:
-        variaveis['arg'] = comm[1]
-        json.dump(variaveis, vrbs)
+        try:
+            variaveis['arg'] = comm[1]
+            json.dump(variaveis, vrbs)
+        except:
+            json.dump(variaveis, vrbs)
     os.system('cd modules/{}/ && python3 {}.py'.format(spl[0], spl[1]))
     variaveis = json.load(open('modules/{}/variables.json'.format(spl[0]), 'r'))
     if variaveis['report'] == "":
