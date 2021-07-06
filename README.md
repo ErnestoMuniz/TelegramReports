@@ -16,7 +16,7 @@ keys.json
 "bot_key" = "YOURKEYGOESHERE" #Telegram bot API key
 ```
 
-Then add your custom mods folders to the modules folder. Or try some of our official ones like [TomTicket_Reports](https://github.com/ErnestoMuniz/TomTicket_Reports) or [NPX_Reports](https://github.com/ErnestoMuniz/NPX_Reports)
+Then add your custom mods folders to the modules folder. Or try some of our official ones like [TomTicket_Reports](https://github.com/ErnestoMuniz/TomTicket_Reports), [NPX_Reports](https://github.com/ErnestoMuniz/NPX_Reports) or [NVOIP Reports](https://github.com/lukasabino/NVOIP_Reports)
 
 ## Usage
 
