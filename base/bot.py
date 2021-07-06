@@ -38,4 +38,5 @@ def report(arg, message, comm):
 
 #update loop
 print('Bot running...')
+bot.remove_webhook()
 bot.polling()
